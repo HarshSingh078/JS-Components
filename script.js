@@ -121,3 +121,31 @@
 // let result = myFunction(11 , 13)
 // console.log(result)
 
+
+// objects 
+const person = {
+    firstName : "Harsh" ,
+    lastName : "Singh" ,
+    age : 24 ,
+    eyeColor : "black" ,
+
+    fullName : function() {
+        return this.firstName + " " + this.lastName ;
+    }
+}
+delete person.eyeColor ;
+
+person.glasses = "rectangle" 
+let me = person ;
+console.log(me)
+
+const person2 = new Object({
+    firstName : "John" 
+})
+
+
+
+// dates
+const d = new Date()
+console.log(d) 
+console.log(d.toDateString())
