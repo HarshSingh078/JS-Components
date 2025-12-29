@@ -146,6 +146,52 @@ const person2 = new Object({
 
 
 // dates
-const d = new Date()
-console.log(d) 
-console.log(d.toDateString())
+// const d = new Date()
+// console.log(d) 
+// console.log(d.toDateString())
+// console.log(d.getMonth())
+// getSeconds , getDay , getFullYear etc
+
+
+
+
+// Array
+const cars = ['BMW' , 'Benz' , 'Audi']
+const cars1 =  new Array('BMW' , 'Benz' , 'Audi')
+console.log(cars[0])
+console.log(cars1[2])
+
+const car = cars.toLocaleString()
+console.log(car)
+console.log(cars)
+console.log(cars[cars.length-1])
+
+// access the all elements
+for(let i=0;i<cars.length;i++) {
+    console.log(cars[i]) ;
+}
+
+const numbers = [40]
+const number = new Array(40) ;
+console.log(numbers)
+console.log(number)
+
+// identify array
+console.log(Array.isArray(numbers))
+
+// Basic Array Methods 
+console.log(cars.length)
+console.log(cars.toString())
+console.log(cars.at(0))
+console.log(cars.join(" * "))
+console.log(cars.pop())
+console.log(cars.push("Ferrari"))
+console.log(cars.shift())
+console.log(cars.unshift("Audi"))
+console.log(Array.isArray(cars))
+console.log(cars.concat(cars1))
+cars.splice(2,0,"Ford","Jaguar")
+console.log(cars)
+
+
+
