@@ -12,10 +12,14 @@
     <button onclick="document.getElementById('p1').innerHTML='Hello!'">
       CLick Me
     </button>
+    <button onclick="displayDate()">Display Date</button>
     <script>
-        let A = 10;
-        A % 2 == 0 ? console.log("even") : console.log("odd");
-        document.getElementById("demo").innerHTML = person.fullName();
+        // let A = 10;
+        // A % 2 == 0 ? console.log("even") : console.log("odd");
+        // document.getElementById("demo").innerHTML = person.fullName();
+        function displayDate() {
+          document.getElementById('p1').innerHTML = Date() ;
+        }
         </script>
   </body>
 </html>
