@@ -7,7 +7,7 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <p id="p1">Hi Harsh</p>
+    <!-- <p id="p1">Hi Harsh</p>
     <p id="demo">Hii</p>
     <button onclick="document.getElementById('p1').innerHTML='Hello!'">
       CLick Me
@@ -20,6 +20,126 @@
         function displayDate() {
           document.getElementById('p1').innerHTML = Date() ;
         }
-        </script>
+        </script> -->
+
+    <!-- <div
+      id="box"
+      style="width: 200px; height: 100px; padding: 16px; border: 1px solid #000"
+    >
+      Move mouse over this box!
+    </div>
+
+    <script>
+      const box = document.getElementById("box");
+
+      // Let box listen for mouseover
+      box.addEventListener("mouseover", function () {
+        box.innerHTML = "Mouse is over me!";
+      });
+
+      // Let box listen for mouseout
+      box.addEventListener("mouseout", function () {
+        box.innerHTML = "Mouse is out!";
+      });
+    </script> -->
+
+    <!-- <h1>JavaScript Events</h1>
+    <h2>The keydown Event</h2>
+
+    <input id="k" type="text" placeholder="Press a key here!" />
+
+    <p id="demo"></p>
+
+    <script>
+      const k = document.getElementById("k");
+
+      // Let k listen for keydown
+      k.addEventListener("keydown", function (event) {
+        document.getElementById("demo").innerHTML = "You pressed: " + event.key;
+      });
+    </script> -->
+
+    <!-- <h1>JavaScript Events</h1>
+    <h2>The DOMContentLoaded Event</h2>
+
+    <p id="demo"></p>
+
+    <script>
+      // Add Event Listener to document
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("demo").innerHTML = "HTML is loaded!";
+      });
+    </script> -->
+
+    <!-- <h1>JavaScript Events</h1>
+<h2>The load Event</h2>
+<p id="demo"></p>
+
+<script>
+// Add Event Listener to window
+window.addEventListener("load", function () {
+  document.getElementById("demo").innerHTML = "Page is fully loaded!";
+});
+</script> -->
+
+    <!-- setInterval -->
+    <!-- <p id="demo"></p>
+<script>
+  setInterval(showTime , 1000)
+
+  function showTime() {
+    const d = new Date() ;
+    document.getElementById("demo").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() ; 
+  }
+</script> -->
+
+    <!-- setTimeout -->
+    <!-- <button id="btn">Start</button>
+  <p id="demo"></p>
+  <script>
+    document.getElementById("btn").addEventListener("click" , function() {
+      setTimeout(showMsg,2000) ;
+    })
+
+    function showMsg() {
+      document.getElementById('demo').innerHTML = "Hello after 2 seconds!"
+    }
+  </script> -->
+
+    <!-- setInterval with clearInterval -->
+    <h1>JavaScript Events</h1>
+    <h2>The setInterval() Method</h2>
+
+    <button id="start">Start Counter</button>
+    <button id="stop">Stop</button>
+
+    <p id="counter">0</p>
+
+    <script>
+      let myInterval;
+      let count = 0;
+
+      const btnStart = document.getElementById("start");
+      const btnStop = document.getElementById("stop");
+
+      // let btnStart listen for a click
+      btnStart.addEventListener("click", function () {
+        // Then start counter
+        myInterval = setInterval(counter, 1000);
+      });
+
+      // let btnStop listen for a click
+      btnStop.addEventListener("click", function () {
+        // Then stop counter
+        clearInterval(myInterval);
+      });
+
+      function counter() {
+        count++;
+        document.getElementById("counter").innerHTML = count;
+      }
+    </script>
+
+  
   </body>
 </html>
